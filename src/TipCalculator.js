@@ -29,7 +29,11 @@ export function TipCalculator() {
 
       {bill > 0 && (
         <>
-          <Output bill={bill} tip={tip} />
+          <Output
+            bill={bill}
+            tip={tip}
+            averageTip={(percentage1 + percentage2) / 2}
+          />
           <Reset onReset={handleReset} />
         </>
       )}
